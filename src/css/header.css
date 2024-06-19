@@ -1,0 +1,161 @@
+.header {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  width: calc(100% - 16px - 16px);
+  height: 61px;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  gap: 16px;
+  padding-left: 8px;
+}
+
+.mobile-menu-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 47px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu-btn-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+}
+
+.header-link {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 61px;
+  border-radius: 0px 0px 20px 20px;
+  transform: translateY(-14px);
+  transition: transform var(--transition-duration-and-func);
+}
+
+.header-link:is(:hover, :focus) {
+  transform: translateY(0px);
+}
+
+.header-link.atb {
+  left: 0;
+  width: 86px;
+  background-color: var(--white-color);
+  padding-bottom: 13px;
+}
+
+.header-logo-link-atb-icon {
+  display: block;
+  width: 55px;
+  height: 20px;
+}
+
+.header-link.code {
+  right: 24px;
+  width: 159px;
+  background-color: #675bb3;
+  padding-bottom: 13px;
+}
+
+.header-link-title {
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    height: 74px;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  .header-container {
+    width: 1232px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .nav {
+    padding-top: 29px;
+  }
+
+  .header-link {
+    height: 74px;
+  }
+
+  .header-link:is(:hover, :focus) {
+    transform: translateY(0px);
+  }
+
+  .header-link.atb {
+    width: 116px;
+    padding-bottom: 17px;
+  }
+
+  .header-logo-link-atb-icon {
+    width: 72px;
+    height: 26px;
+  }
+
+  .header-nav-links-list-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 284px;
+  }
+
+  .header-nav-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .header-nav-link {
+    color: var(--white-color);
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .header-link.code {
+    width: 177px;
+    padding-bottom: 21px;
+  }
+
+  .header-link-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .header-nav-links-list-wrap {
+    display: none;
+  }
+}

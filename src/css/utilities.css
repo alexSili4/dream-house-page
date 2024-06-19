@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: var(--body-color);
+  padding: 16px;
+}
+
 .hidden-element {
   position: fixed;
   transform: scale(0);
@@ -37,4 +42,10 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 20px 24px;
+  }
 }
