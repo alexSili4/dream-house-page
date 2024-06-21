@@ -1,0 +1,156 @@
+.prizes-section {
+  position: relative;
+  padding-top: 118px;
+  padding-bottom: 40px;
+}
+
+.prizes-container {
+  width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prizes-prize-img-wrap {
+  position: relative;
+  width: 343px;
+  height: 227px;
+  background-image: url('/icons/prizes/prize-img-bg.svg');
+  background-size: 187px 197px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.prizes-prize-date-wrap {
+  position: absolute;
+  top: 26px;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 46px;
+  border-radius: 23px;
+  box-shadow: 2.79px 2.79px 0px 0px rgba(103, 91, 178, 0.29);
+  background-color: #9689e8;
+  transform: rotate(-7.37deg);
+}
+
+.prizes-prize-date {
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.prizes-prize-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-radius: 16px;
+  background-color: #675bb2;
+}
+
+.prizes-prize-name {
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.prizes-slider-controls-wrap {
+  position: relative;
+  margin-top: 56px;
+}
+
+.prizes-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prizes-slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #675bb2;
+}
+
+.prizes-slider-button-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+}
+
+.prizes-slider-button-icon.prev {
+  transform: rotate(180deg);
+}
+
+.prizes-slider-pagination {
+  top: 50% !important;
+  height: 27px !important;
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  pointer-events: none;
+  transform: translateY(-50%) !important;
+}
+
+.prizes-prize-img {
+  position: absolute;
+  top: calc(50% + 10px);
+  left: 50%;
+  display: block;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.prizes-prize-img.coffee-machine {
+  width: 159px;
+}
+
+.prizes-prize-img.vacuum-cleaner {
+  width: 159px;
+}
+
+.prizes-prize-img.hair-dryer {
+  top: calc(50% - 5px);
+  width: 200px;
+}
+
+.prizes-prize-img.grill {
+  width: 270px;
+}
+
+.prizes-prize-img.iron {
+  width: 260px;
+}
+
+.prizes-prize-img.robot-vacuum-cleaner {
+  top: calc(50% + 5px);
+  width: 280px;
+}
+
+.prizes-prize-img.kitchen-machine {
+  top: calc(50% + 15px);
+  width: 230px;
+}
+
+.prizes-prize-img.money {
+  top: calc(50% + 15px);
+  width: 230px;
+}

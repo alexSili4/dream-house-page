@@ -44,6 +44,15 @@ body {
   pointer-events: none;
 }
 
+.pointer-event-none {
+  pointer-events: none;
+}
+
+.hidden-section-title {
+  position: absolute;
+  transform: scale(0);
+}
+
 @media screen and (min-width: 1280px) {
   body {
     padding: 20px 24px;
