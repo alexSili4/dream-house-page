@@ -83,6 +83,8 @@
 }
 
 .hero-content-text {
+  position: relative;
+  align-self: flex-start;
   color: var(--white-color);
   font-family: Mulish;
   font-size: 18px;
@@ -232,8 +234,8 @@
 
   .hero-card-desk-img {
     position: absolute;
-    top: 165px;
-    left: calc(50% - 250px);
+    top: 170px;
+    left: calc(50% - 245px);
     display: block;
     width: 649px;
     height: 766px;

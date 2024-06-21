@@ -3,7 +3,7 @@
   z-index: 10;
   top: 16px;
   left: 50%;
-  width: calc(100% - 16px - 16px);
+  width: 343px;
   height: 61px;
   transform: translateX(-50%);
   overflow: hidden;

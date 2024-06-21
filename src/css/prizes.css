@@ -259,6 +259,11 @@
     left: 0;
     width: 100%;
     margin-top: 0px;
+    pointer-events: none;
+  }
+
+  .prizes-slider-button {
+    pointer-events: all;
   }
 
   .prizes-prize-img {
@@ -320,12 +325,8 @@
   }
 }
 
-.prizes-register-code-link-title-wrap {
-  position: relative;
-}
-
-.prizes-register-code-link-star-icon {
-  position: absolute;
-  display: block;
-  transition: opacity var(--transition-duration-and-func);
+@media screen and (max-width: 1279px) {
+  .prizes-slider-desk {
+    display: none !important;
+  }
 }
