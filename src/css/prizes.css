@@ -14,7 +14,7 @@
   position: relative;
   width: 343px;
   height: 227px;
-  background-image: url('/icons/prizes/prize-img-bg.svg');
+  background-image: url('/icons/prizes/prize-img-bg-mobile.svg');
   background-size: 187px 197px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -27,8 +27,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 92px;
+  min-width: 92px;
   height: 46px;
+  padding-left: 22px;
+  padding-right: 22px;
   border-radius: 23px;
   box-shadow: 2.79px 2.79px 0px 0px rgba(103, 91, 178, 0.29);
   background-color: #9689e8;
@@ -84,6 +86,11 @@
   border: none;
   border-radius: 50%;
   background-color: #675bb2;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.prizes-slider-button:is(:hover, :focus) {
+  background-color: #9689e8;
 }
 
 .prizes-slider-button-icon {
@@ -153,4 +160,172 @@
 .prizes-prize-img.money {
   top: calc(50% + 15px);
   width: 230px;
+}
+
+.prizes-register-code-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94px;
+  border-radius: 30px;
+  background-color: var(--white-color);
+  margin-top: 44px;
+}
+
+.prizes-register-code-link-title-wrap {
+  position: relative;
+}
+
+.prizes-register-code-link-title {
+  color: #592f9e;
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.prizes-register-code-link-star-icon {
+  position: absolute;
+  display: block;
+  transition: opacity var(--transition-duration-and-func);
+}
+
+.prizes-register-code-link-star-icon.left {
+  right: calc(100% + 20px);
+  bottom: -5px;
+  width: 28px;
+  height: 28px;
+}
+
+.prizes-register-code-link-star-icon.right {
+  top: -7px;
+  left: calc(100% + 12px);
+  width: 26px;
+  height: 26px;
+}
+
+@media screen and (min-width: 1280px) {
+  .prizes-section {
+    padding-top: 385px;
+    padding-bottom: 100px;
+  }
+
+  .prizes-container {
+    width: 1232px;
+  }
+
+  .prizes-slider-mobile {
+    display: none !important;
+  }
+
+  .prizes-prize-img-wrap {
+    width: 100%;
+    height: 378px;
+    background-image: url('/icons/prizes/prize-img-bg-desk.svg');
+    background-size: 249px 263px;
+    background-position: top 33px left 50%;
+  }
+
+  .prizes-prize-date-wrap {
+    position: absolute;
+    top: 18px;
+    left: 9px;
+    min-width: 132px;
+    height: 66px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 33px;
+    box-shadow: 4px 4px 0px 0px rgba(103, 91, 178, 0.29);
+  }
+
+  .prizes-prize-date {
+    font-size: 28px;
+  }
+
+  .prizes-prize-title-wrap {
+    height: 92px;
+    border-radius: 20px;
+  }
+
+  .prizes-prize-name {
+    font-size: 20px;
+  }
+
+  .prizes-slider-controls-wrap {
+    position: absolute;
+    z-index: 10;
+    top: 179px;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .prizes-prize-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: auto;
+    transform: translateX(-50%);
+  }
+
+  .prizes-prize-img.coffee-machine {
+    top: -19px;
+    width: 264px;
+  }
+
+  .prizes-prize-img.vacuum-cleaner {
+    top: -5px;
+    width: 253px;
+  }
+
+  .prizes-prize-img.hair-dryer {
+    top: 0;
+    width: 307px;
+  }
+
+  .prizes-prize-img.grill {
+    top: -16px;
+    width: 452px;
+  }
+
+  .prizes-prize-img.iron {
+    top: -62px;
+    width: 485px;
+  }
+
+  .prizes-prize-img.robot-vacuum-cleaner {
+    top: -4px;
+    width: 388px;
+  }
+
+  .prizes-prize-img.kitchen-machine {
+    top: -15px;
+    width: 347px;
+  }
+
+  .prizes-prize-img.money {
+    top: 132px;
+    width: 380px;
+  }
+
+  .prizes-register-code-link {
+    height: 114px;
+    margin-top: 50px;
+  }
+
+  .prizes-register-code-link:not(:is(:hover, :focus)) .prizes-register-code-link-star-icon {
+    opacity: 0;
+  }
+}
+
+.prizes-register-code-link-title-wrap {
+  position: relative;
+}
+
+.prizes-register-code-link-star-icon {
+  position: absolute;
+  display: block;
+  transition: opacity var(--transition-duration-and-func);
 }

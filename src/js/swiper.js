@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const prizesSwiper = new Swiper('.prizes-slider-mobile', {
+const prizesSwiperMobile = new Swiper('.prizes-slider-mobile', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
   spaceBetween: 50,
@@ -22,5 +22,19 @@ const prizesSwiper = new Swiper('.prizes-slider-mobile', {
     renderCustom: function (swiper, current, total) {
       return `${String(current).padStart(2, '0')}\\${String(total).padStart(2, '0')}`;
     },
+  },
+});
+
+const prizesSwiperDesk = new Swiper('.prizes-slider-desk', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  spaceBetween: 16,
+  slidesPerView: 2,
+  speed: 800,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.prizes-slider-button-next',
+    prevEl: '.prizes-slider-button-prev',
   },
 });
