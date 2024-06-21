@@ -12,6 +12,24 @@
 
 @font-face {
   font-family: 'Nunito';
+  src: local('Nunito'), url('/fonts/nunito/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Nunito';
   src: local('Nunito'), url('/fonts/nunito/Nunito-Regular.ttf') format('truetype');
   font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: local('Mulish'), url('/fonts/mulish/Mulish-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: local('Mulish'), url('/fonts/mulish/Mulish-Medium.ttf') format('truetype');
+  font-weight: 500;
 }
