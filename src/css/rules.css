@@ -1,0 +1,126 @@
+.rules-section {
+  padding-bottom: 40px;
+}
+
+.rules-container {
+  width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rules-rule {
+  position: relative;
+  border-radius: 30px;
+  background-color: #9689e8;
+  padding: 32px 24px;
+  padding-top: 213px;
+}
+
+.rules-rule.goods {
+  background-image: url('/images/rules/basket-mobile.png');
+  background-position: 0 0;
+  background-size: 343px 296px;
+  background-repeat: no-repeat;
+}
+
+.rules-rule.additional-card {
+  background-color: #bcb4f1;
+  background-image: url('/images/rules/additional-card-mobile.png');
+  background-position: top 0px left 74px;
+  background-size: 270px 249px;
+  background-repeat: no-repeat;
+}
+
+.rules-rule.game {
+  background-color: #f9f9f9;
+  background-image: url('/images/rules/game-mobile.png');
+  background-position: top 10px left 75px;
+  background-size: 268px 214px;
+  background-repeat: no-repeat;
+}
+
+.rules-rule.code {
+  background-image: url('/images/rules/code-mobile.png');
+  background-position: top 13px left 152px;
+  background-size: 191px 218px;
+  background-repeat: no-repeat;
+}
+
+.rules-rule.prizes {
+  background-image: url('/images/rules/prizes-mobile.png');
+  background-position: top 32px left 75px;
+  background-size: 268px 193px;
+  background-repeat: no-repeat;
+}
+
+.rules-rule-number {
+  position: absolute;
+  top: 32px;
+  left: 24px;
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.rules-rule-number.game {
+  color: #9689e8;
+}
+
+.rules-rule-desc {
+  width: 211px;
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01;
+}
+
+.rules-rule-desc.additional {
+  width: 265px;
+}
+
+.rules-rule-desc.additional > .main {
+  display: block;
+  width: 211px;
+}
+
+.rules-rule-desc.additional > .accent {
+  color: #665da4;
+}
+
+.rules-rule-desc.game {
+  color: #9689e8;
+}
+
+@media screen and (min-width: 1280px) {
+  .rules-section {
+    padding-bottom: 100px;
+  }
+
+  .rules-container {
+    width: 1232px;
+  }
+
+  .rules-list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .rules-rule {
+    position: relative;
+    border-radius: 30px;
+    background-color: #9689e8;
+    padding: 32px 24px;
+    padding-top: 213px;
+  }
+}

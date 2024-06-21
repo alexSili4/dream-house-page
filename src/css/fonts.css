@@ -24,12 +24,18 @@
 
 @font-face {
   font-family: 'Mulish';
-  src: local('Mulish'), url('/fonts/mulish/Mulish-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: local('Mulish'), url('/fonts/mulish/Mulish-SemiBold.ttf') format('truetype');
+  font-weight: 600;
 }
 
 @font-face {
   font-family: 'Mulish';
   src: local('Mulish'), url('/fonts/mulish/Mulish-Medium.ttf') format('truetype');
   font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: local('Mulish'), url('/fonts/mulish/Mulish-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
