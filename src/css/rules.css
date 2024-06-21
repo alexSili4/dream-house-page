@@ -118,9 +118,77 @@
 
   .rules-rule {
     position: relative;
+    height: 100%;
     border-radius: 30px;
     background-color: #9689e8;
-    padding: 32px 24px;
-    padding-top: 213px;
+    padding: 32px 33px;
+    padding-top: 190px;
+  }
+
+  .rules-rule.goods {
+    width: 499px;
+    background-image: url('/images/rules/basket-desk.png');
+    background-position: top 0px right 0px;
+    background-size: 306px 276px;
+  }
+
+  .rules-rule.additional-card {
+    width: 717px;
+    padding-top: 158px;
+    background-color: #bcb4f1;
+    background-image: url('/images/rules/additional-card-desk.png');
+    background-position: top 0px right 0px;
+    background-size: 469px 278px;
+  }
+
+  .rules-rule.game {
+    width: 392px;
+    background-color: #f9f9f9;
+    background-image: url('/images/rules/game-desk.png');
+    background-position: top 0px right 0px;
+    background-size: 288px 216px;
+  }
+
+  .rules-rule.code {
+    width: 416px;
+    padding-top: 162px;
+    background-image: url('/images/rules/code-desk.png');
+    background-position: top 6px right 0px;
+    background-size: 197px 256px;
+  }
+
+  .rules-rule.prizes {
+    width: 392px;
+    background-image: url('/images/rules/prizes-desk.png');
+    background-position: top 35px right 14px;
+    background-size: 272px 177px;
+  }
+
+  .rules-rule-number {
+    top: 20px;
+    left: 32px;
+    font-size: 70px;
+    line-height: 1.5;
+  }
+
+  .rules-rule-desc {
+    width: 239px;
+    font-size: 20px;
+  }
+
+  .rules-rule-desc.additional {
+    width: 350px;
+  }
+
+  .rules-rule-desc.additional > .main {
+    width: 350px;
+  }
+
+  .rules-rule-desc.additional > .accent {
+    margin-top: 4px;
+  }
+
+  .rules-rule-desc.game {
+    width: 283px;
   }
 }
