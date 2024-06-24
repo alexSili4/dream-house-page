@@ -30,7 +30,7 @@ a {
 
 body {
   background-color: var(--body-color);
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 .hidden-element {
@@ -53,8 +53,16 @@ body {
   transform: scale(0);
 }
 
+.container {
+  width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 1280px) {
-  body {
-    padding: 20px;
+  .container {
+    width: 1264px;
   }
 }

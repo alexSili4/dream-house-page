@@ -38,3 +38,36 @@ const prizesSwiperDesk = new Swiper('.prizes-slider-desk', {
     prevEl: '.prizes-slider-button-prev',
   },
 });
+
+const mobileAppScreensSwiper = new Swiper('.mobile-app-screens-slider', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  spaceBetween: 0,
+  speed: 800,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.mobile-app-steps-slider-button-next',
+    prevEl: '.mobile-app-steps-slider-button-prev',
+  },
+});
+
+const mobileAppStepsSwiper = new Swiper('.mobile-app-steps-slider', {
+  modules: [Navigation, Pagination],
+  direction: 'horizontal',
+  spaceBetween: 50,
+  speed: 800,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.mobile-app-steps-slider-button-next',
+    prevEl: '.mobile-app-steps-slider-button-prev',
+  },
+  pagination: {
+    el: '.mobile-app-steps-slider-pagination',
+    type: 'custom',
+    renderCustom: function (swiper, current, total) {
+      return `${String(current).padStart(2, '0')}\\${String(total).padStart(2, '0')}`;
+    },
+  },
+});

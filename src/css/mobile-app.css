@@ -1,0 +1,148 @@
+.mobile-app-bg {
+  padding-top: 40px;
+  padding-bottom: 44px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+}
+
+.mobile-app-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.mobile-app-title {
+  color: #333333;
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.01;
+}
+
+.mobile-app-text {
+  color: #333333;
+  font-family: Nunito;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.01;
+}
+
+.mobile-app-links-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.mobile-app-link {
+  width: 165px;
+  height: 48px;
+}
+
+.mobile-app-sliders-wrap {
+  margin-top: 32px;
+}
+
+.mobile-app-screens-slider-decorative-app {
+  position: relative;
+  width: 276px;
+  height: 560px;
+  padding: 4px 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-app-screens-slider-decorative-app-img {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mobile-app-screens-slider {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.mobile-app-screens-slider-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-app-steps-slider {
+  margin-top: 32px;
+}
+
+.mobile-app-steps-slider-slide-text {
+  color: #333333;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.mobile-app-steps-slider-controls-wrap {
+  position: relative;
+  margin-top: 36px;
+}
+
+.mobile-app-steps-slider-pagination {
+  top: 50% !important;
+  height: 27px !important;
+  color: #333333;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.5;
+  pointer-events: none;
+  transform: translateY(-50%) !important;
+}
+
+.mobile-app-steps-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-app-steps-slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #bcb4f1;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.mobile-app-steps-slider-button:is(:hover, :focus) {
+  background-color: #9689e8;
+}
+
+.mobile-app-steps-slider-button-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+}
+
+.prev {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1279px) {
+  .mobile-app-qr-code-wrap {
+    display: none;
+  }
+}

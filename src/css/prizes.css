@@ -4,12 +4,6 @@
   padding-bottom: 40px;
 }
 
-.prizes-container {
-  width: 343px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .prizes-prize-img-wrap {
   position: relative;
   width: 343px;
@@ -209,10 +203,6 @@
   .prizes-section {
     padding-top: 385px;
     padding-bottom: 100px;
-  }
-
-  .prizes-container {
-    width: 1232px;
   }
 
   .prizes-slider-mobile {

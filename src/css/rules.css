@@ -2,12 +2,6 @@
   padding-bottom: 40px;
 }
 
-.rules-container {
-  width: 343px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .rules-list {
   display: flex;
   flex-direction: column;
@@ -103,10 +97,6 @@
 @media screen and (min-width: 1280px) {
   .rules-section {
     padding-bottom: 100px;
-  }
-
-  .rules-container {
-    width: 1232px;
   }
 
   .rules-list {
