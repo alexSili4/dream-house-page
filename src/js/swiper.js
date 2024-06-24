@@ -40,16 +40,10 @@ const prizesSwiperDesk = new Swiper('.prizes-slider-desk', {
 });
 
 const mobileAppScreensSwiper = new Swiper('.mobile-app-screens-slider', {
-  modules: [Navigation],
   direction: 'horizontal',
   spaceBetween: 0,
   speed: 800,
-  loop: true,
   grabCursor: true,
-  navigation: {
-    nextEl: '.mobile-app-steps-slider-button-next',
-    prevEl: '.mobile-app-steps-slider-button-prev',
-  },
 });
 
 const mobileAppStepsSwiper = new Swiper('.mobile-app-steps-slider', {
@@ -57,7 +51,6 @@ const mobileAppStepsSwiper = new Swiper('.mobile-app-steps-slider', {
   direction: 'horizontal',
   spaceBetween: 50,
   speed: 800,
-  loop: true,
   grabCursor: true,
   navigation: {
     nextEl: '.mobile-app-steps-slider-button-next',
@@ -70,4 +63,12 @@ const mobileAppStepsSwiper = new Swiper('.mobile-app-steps-slider', {
       return `${String(current).padStart(2, '0')}\\${String(total).padStart(2, '0')}`;
     },
   },
+});
+
+mobileAppScreensSwiper.on('slideChange', function () {
+  mobileAppStepsSwiper.slideTo(mobileAppScreensSwiper.activeIndex);
+});
+
+mobileAppStepsSwiper.on('slideChange', function () {
+  mobileAppScreensSwiper.slideTo(mobileAppStepsSwiper.activeIndex);
 });
