@@ -144,7 +144,7 @@
   fill: var(--white-color);
 }
 
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 1280px) {
   .questions-section {
     padding-top: 100px;
     padding-bottom: 100px;

@@ -1,0 +1,253 @@
+.footer {
+  padding: 16px;
+}
+
+.footer-bg {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 30px;
+  background-color: #9689e8;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-general-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 24px;
+  background-color: var(--white-color);
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer-logo-link-icon {
+  display: block;
+  width: 100px;
+  height: 37px;
+}
+
+.footer-app-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-app-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-app-link-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #675bb2;
+  border-radius: 50%;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.footer-app-link:is(:hover, :focus) .footer-app-link-icon-wrap {
+  background-color: #9689e8;
+}
+
+.footer-app-link-icon-wrap.google-play {
+  justify-content: flex-start;
+  padding-left: 16px;
+}
+
+.footer-app-link-icon {
+  fill: var(--white-color);
+}
+
+.footer-app-link-icon.app-store {
+  width: 17px;
+  height: 20px;
+}
+
+.footer-app-link-icon.google-play {
+  width: 17px;
+  height: 18px;
+}
+
+.footer-app-link-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-app-link-text-text {
+  color: #9f9f9f;
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.86;
+}
+
+.footer-app-link-text-title {
+  color: #675bb2;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.04;
+}
+
+.footer-phone-link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.footer-phone-link-icon {
+  width: 15px;
+  height: 15px;
+  fill: #675bb2;
+}
+
+.footer-phone-link-title {
+  color: #9689e8;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01;
+}
+
+.footer-social-links-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-links-list-item {
+  position: relative;
+}
+
+.footer-social-links-list-item.facebook {
+  transform: translateX(1px);
+}
+
+.footer-social-links-list-item.instagram {
+  z-index: 10;
+  transform: translateX(-1px);
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: #9689e8;
+  border-radius: 50%;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.footer-social-link:is(:hover, :focus) {
+  background-color: #675bb2;
+}
+
+.footer-social-link.instagram {
+  outline: 3px solid var(--white-color);
+}
+
+.footer-social-link-icon {
+  fill: var(--white-color);
+}
+
+.footer-social-link-icon.facebook {
+  width: 12px;
+  height: 23px;
+}
+
+.footer-social-link-icon.instagram {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-nav-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-nav-links-list-item:nth-child(odd) {
+  width: 113px;
+}
+
+.footer-nav-link {
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition-duration-and-func);
+}
+
+.footer-nav-link:is(:hover, :focus) {
+  text-decoration-color: currentColor;
+}
+
+.footer-additional-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-art-nation-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-art-nation-icon {
+  display: block;
+  width: 118px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.footer-art-nation-text {
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer-sun {
+  align-self: flex-end;
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (max-width: 1279px) {
+  .footer-art-nation-icon.desk {
+    display: none;
+  }
+}
