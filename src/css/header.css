@@ -16,6 +16,7 @@
 }
 
 .mobile-menu-btn {
+  position: relative;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -32,6 +33,24 @@
   width: 24px;
   height: 24px;
   fill: var(--white-color);
+  transition: opacity var(--transition-duration-and-func);
+}
+
+.mobile-menu-btn-icon.close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+body:has(.mobile-menu:not(.is-hidden)) .mobile-menu-btn-icon.open {
+  opacity: 0;
+}
+
+body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
+  opacity: 0;
 }
 
 .nav {

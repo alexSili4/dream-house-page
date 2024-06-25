@@ -1,8 +1,11 @@
 <header class="header">
   <div class="container header-container">
-    <button type="button" class="mobile-menu-btn">
-      <svg class="mobile-menu-btn-icon">
+    <button type="button" class="mobile-menu-btn js-mobile-menu-toggle">
+      <svg class="mobile-menu-btn-icon open">
         <use href="/icons/icons.svg#mobile-menu-btn"></use>
+      </svg>
+      <svg class="mobile-menu-btn-icon close">
+        <use href="/icons/icons.svg#close"></use>
       </svg>
     </button>
     <nav class="nav">
@@ -12,20 +15,20 @@
         </svg>
       </a>
       <div class="header-nav-links-list-wrap">
-        <ul class="header-nav-links-list">
+        <ul class="header-nav-links-list js-main-navigation">
           <li class="header-nav-links-list-item">
-            <a class="header-nav-link" href="/">Подарунки</a>
+            <a class="header-nav-link js-main-navigation-link" href="#prizes">Подарунки</a>
           </li>
           <li class="header-nav-links-list-item">
-            <a class="header-nav-link" href="/">Умови участі</a>
+            <a class="header-nav-link js-main-navigation-link" href="#rules">Умови участі</a>
           </li>
         </ul>
-        <ul class="header-nav-links-list">
+        <ul class="header-nav-links-list js-main-navigation">
           <li class="header-nav-links-list-item">
-            <a class="header-nav-link" href="/">Застосунок</a>
+            <a class="header-nav-link js-main-navigation-link" href="#mobile-app">Застосунок</a>
           </li>
           <li class="header-nav-links-list-item">
-            <a class="header-nav-link" href="/">Питання</a>
+            <a class="header-nav-link js-main-navigation-link" href="#questions">Питання</a>
           </li>
         </ul>
       </div>
