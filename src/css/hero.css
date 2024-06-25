@@ -25,41 +25,37 @@
 .hero-bg-mobile-img {
   position: absolute;
   top: 111px;
-  left: 50%;
+  left: calc(50% - 167px);
   display: block;
   width: 333px;
   height: 112px;
-  transform: translateX(-50%);
 }
 
 .hero-card-mobile-img {
   position: absolute;
   top: 166px;
-  left: calc(50% - 102px);
+  left: calc(50% - 102px - 110px);
   display: block;
   width: 221px;
   height: 273px;
-  transform: translateX(-50%);
 }
 
 .hero-prize-mobile-img {
   position: absolute;
   top: 133px;
-  left: 50%;
+  left: calc(50% - 140px);
   display: block;
   width: 280px;
   height: 43px;
-  transform: translateX(-50%);
 }
 
 .hero-logo-img {
   position: absolute;
   top: 50px;
-  left: 50%;
+  left: calc(50% - 62px);
   display: block;
   width: 124px;
   height: 87px;
-  transform: translateX(-50%);
 }
 
 .hero-container {
@@ -143,6 +139,11 @@
   position: absolute;
   top: 396px;
   left: 50%;
+  transform-origin: top right;
+  transform: translateX(-50%) rotate(-3.93deg);
+}
+
+.hero-date-wrap-bg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,8 +152,6 @@
   border-radius: 25.5px;
   box-shadow: 5px 4px 0px 0px rgba(103, 91, 178, 0.48);
   background-color: var(--white-color);
-  transform-origin: top right;
-  transform: translateX(-50%) rotate(-3.93deg);
 }
 
 .hero-date {
@@ -193,10 +192,9 @@
 .hero-house-mobile-icon {
   position: absolute;
   top: 170px;
-  left: calc(50% + 2px);
+  left: calc(50% + 2px - 188px);
   width: 376px;
   height: 302px;
-  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 1280px) {
@@ -233,11 +231,10 @@
   .hero-bg-desk-img {
     position: absolute;
     top: 82px;
-    left: 50%;
+    left: calc(50% - 463px);
     display: block;
     width: 925px;
     height: 255px;
-    transform: translateX(-50%);
   }
 
   .hero-card-mobile-img {
@@ -247,11 +244,10 @@
   .hero-card-desk-img {
     position: absolute;
     top: 170px;
-    left: calc(50% - 245px);
+    left: calc(50% - 245px - 325px);
     display: block;
     width: 649px;
     height: 766px;
-    transform: translateX(-50%);
   }
 
   .hero-prize-mobile-img {
@@ -261,21 +257,19 @@
   .hero-prize-desk-img {
     position: absolute;
     top: 140px;
-    left: 50%;
+    left: calc(50% - 360px);
     display: block;
     width: 719px;
     height: 111px;
-    transform: translateX(-50%);
   }
 
   .hero-logo-img {
     position: absolute;
     top: 5px;
-    left: 50%;
+    left: calc(50% - 102px);
     display: block;
     width: 203px;
     height: 143px;
-    transform: translateX(-50%);
   }
 
   .hero-container {
@@ -362,10 +356,9 @@
   .hero-house-desk-icon {
     position: absolute;
     top: 225px;
-    left: calc(50% + 70px);
+    left: calc(50% + 70px - 465px);
     width: 930px;
     height: 744px;
-    transform: translateX(-50%);
   }
 
   .qr-code-wrap {
