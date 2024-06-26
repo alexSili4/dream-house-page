@@ -29,7 +29,6 @@
   display: block;
   width: 333px;
   height: 112px;
-  animation-delay: var(--animation-delay);
 }
 
 .hero-card-mobile-img {
@@ -48,7 +47,6 @@
   display: block;
   width: 280px;
   height: 43px;
-  animation-delay: var(--animation-delay);
 }
 
 .hero-logo-img {
@@ -58,7 +56,6 @@
   display: block;
   width: 124px;
   height: 87px;
-  animation-delay: var(--animation-delay);
 }
 
 .hero-container {
@@ -78,7 +75,6 @@
   font-weight: 900;
   letter-spacing: -0.01;
   text-transform: uppercase;
-  animation-delay: var(--animation-delay);
 }
 
 .hero-content-wrap {
@@ -97,7 +93,6 @@
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  animation-delay: var(--animation-delay);
 }
 
 .hero-content-download-link {
@@ -157,7 +152,6 @@
   border-radius: 25.5px;
   box-shadow: 5px 4px 0px 0px rgba(103, 91, 178, 0.48);
   background-color: var(--white-color);
-  animation-delay: var(--animation-delay);
 }
 
 .hero-date {
@@ -241,7 +235,6 @@
     display: block;
     width: 925px;
     height: 255px;
-    animation-delay: var(--animation-delay);
   }
 
   .hero-card-mobile-img {
@@ -268,7 +261,6 @@
     display: block;
     width: 719px;
     height: 111px;
-    animation-delay: var(--animation-delay);
   }
 
   .hero-logo-img {
@@ -375,7 +367,6 @@
     left: calc(50% + 456px);
     width: 90px;
     height: auto;
-    animation-delay: var(--animation-delay);
   }
 
   .qr-code-title {

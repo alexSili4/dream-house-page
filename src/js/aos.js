@@ -1,3 +1,5 @@
 import AOS from 'aos';
 
-AOS.init();
+AOS.init({
+  easing: 'ease-out-back',
+});
