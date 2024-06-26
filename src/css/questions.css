@@ -121,6 +121,7 @@
   margin-top: 32px;
   background-color: #9689e8;
   border-radius: 28px;
+  transition: background-color var(--answer-transition-duration-and-func);
 }
 
 .questions-download-link-title {
@@ -129,19 +130,26 @@
   font-size: 16px;
   font-weight: 900;
   line-height: 1.1;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: text-decoration-color var(--answer-transition-duration-and-func);
-}
-
-.questions-download-link:is(:hover, :focus) .questions-download-link-title {
-  text-decoration-color: var(--white-color);
+  transition: color var(--answer-transition-duration-and-func);
 }
 
 .questions-download-link-icon {
   width: 18px;
   height: 18px;
   fill: var(--white-color);
+  transition: fill var(--answer-transition-duration-and-func);
+}
+
+.questions-download-link:is(:hover, :focus) {
+  background-color: var(--white-color);
+}
+
+.questions-download-link:is(:hover, :focus) .questions-download-link-title {
+  color: #9689e8;
+}
+
+.questions-download-link:is(:hover, :focus) .questions-download-link-icon {
+  fill: #9689e8;
 }
 
 @media screen and (min-width: 1280px) {

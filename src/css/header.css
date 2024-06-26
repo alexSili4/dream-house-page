@@ -160,13 +160,11 @@ body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.1;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: text-decoration-color var(--transition-duration-and-func);
+    transition: color var(--transition-duration-and-func);
   }
 
   .header-nav-link:is(:hover, :focus) {
-    text-decoration-color: var(--white-color);
+    color: #f9b345;
   }
 
   .header-link.code {

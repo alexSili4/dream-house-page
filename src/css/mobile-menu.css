@@ -26,7 +26,7 @@ body:has(.mobile-menu:not(.is-hidden)) {
   padding-bottom: 47px;
   border-radius: 30px;
   background-color: #9689e8;
-  background-image: url('../images/mobile-menu/rays.png'), url('/images/mobile-menu/logo.png');
+  background-image: url('/images/mobile-menu/rays.png'), url('/images/mobile-menu/logo.png');
   background-position: top -176px left calc(50% + 12px), left 50% top 114px;
   background-size: 746px 591px, 124px 87px;
   background-repeat: no-repeat;

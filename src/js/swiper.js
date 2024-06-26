@@ -1,4 +1,3 @@
-// core version + navigation, pagination modules:
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -42,7 +41,7 @@ const prizesSwiperDesk = new Swiper('.prizes-slider-desk', {
 const mobileAppScreensSwiper = new Swiper('.mobile-app-screens-slider', {
   direction: 'horizontal',
   spaceBetween: 0,
-  speed: 800,
+  speed: 400,
   grabCursor: true,
 });
 
@@ -50,7 +49,7 @@ const mobileAppStepsSwiper = new Swiper('.mobile-app-steps-slider', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
   spaceBetween: 50,
-  speed: 800,
+  speed: 400,
   grabCursor: true,
   navigation: {
     nextEl: '.mobile-app-steps-slider-button-next',

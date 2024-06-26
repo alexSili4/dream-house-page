@@ -196,8 +196,12 @@
   }
 
   .mobile-app-qr-code-wrap {
+    width: 216px;
+    height: 215px;
+    background-color: var(--white-color);
     margin-top: 45px;
     padding: 16px;
+    border-radius: 20px;
   }
 
   .mobile-app-qr-code-img {
