@@ -1,8 +1,9 @@
 .decorative-ticker-wrap {
   position: absolute;
   top: 56px;
-  left: 0px;
-  width: 100%;
+  left: 50%;
+  width: 1440px;
+  transform: translateX(-50%);
   overflow: hidden;
 }
 
@@ -10,7 +11,7 @@
   display: flex;
   align-items: center;
   width: 200%;
-  animation: ticker 6000ms linear infinite;
+  animation: ticker 10000ms linear infinite;
 }
 
 .decorative-ticker-text-wrap {
@@ -45,45 +46,14 @@
   text-align: center;
 }
 
-.decorative-ticker-text.second {
-  display: none;
-}
-
-.decorative-ticker-text.third {
-  display: none;
-}
-
-.decorative-ticker-text.fourth {
-  display: none;
-}
-
-.decorative-ticker-text.fifth {
-  display: none;
-}
-
-@media screen and (min-width: 650px) {
-  .decorative-ticker-text.second {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 950px) {
-  .decorative-ticker-text.third {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1250px) {
-  .decorative-ticker-text.fourth {
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .decorative-ticker-wrap {
     top: 197px;
-    left: 0px;
-    width: 100%;
+    width: 4320px;
+  }
+
+  .decorative-ticker-text-container {
+    animation: ticker 12000ms linear infinite;
   }
 
   .decorative-ticker-text {
@@ -94,41 +64,15 @@
   .decorative-ticker-text-last {
     font-size: 66px;
   }
-
-  .decorative-ticker-text.second {
-    display: none;
-  }
-
-  .decorative-ticker-text.third {
-    display: none;
-  }
-
-  .decorative-ticker-text.fourth {
-    display: none;
-  }
 }
 
-@media screen and (min-width: 1350px) {
-  .decorative-ticker-text.second {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 2050px) {
-  .decorative-ticker-text.third {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 2750px) {
-  .decorative-ticker-text.fourth {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 3450px) {
+@media screen and (max-width: 1279px) {
   .decorative-ticker-text.fifth {
-    display: flex;
+    display: none;
+  }
+
+  .decorative-ticker-text.sixth {
+    display: none;
   }
 }
 
