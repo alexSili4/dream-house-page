@@ -1,5 +1,5 @@
 const smoothScroll = (element) => {
-  element.scrollIntoView({ behavior: 'smooth' });
+  element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 };
 
 export default smoothScroll;

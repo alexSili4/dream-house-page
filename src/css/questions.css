@@ -45,13 +45,12 @@
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: transparent;
-  transition-property: padding-bottom;
-  transition-delay: 400ms;
+  transition: padding-bottom var(--answer-transition-duration-and-func) 300ms;
 }
 
 .questions-question-wrap:not(.hidden-desc) .questions-question-btn {
   padding-bottom: 16px;
-  transition-delay: 0ms;
+  transition: none;
 }
 
 .questions-question-btn-title {

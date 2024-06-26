@@ -77,6 +77,16 @@
   letter-spacing: -0.01;
 }
 
+.rules-rule-desc-link {
+  color: currentColor;
+  text-decoration: underline;
+  transition: color var(--transition-duration-and-func);
+}
+
+.rules-rule-desc-link:is(:hover, :focus) {
+  color: #f9b345;
+}
+
 .rules-rule-desc.additional {
   width: 265px;
 }

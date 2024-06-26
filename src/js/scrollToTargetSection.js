@@ -9,16 +9,18 @@ refs.mainNavigation.forEach((el) => {
 
 function onMainNavigationLinkClick(e) {
   const isMobileMenuLink = e.currentTarget.closest('.js-mobile-menu');
-  const isNavLink = e.target.classList.contains('js-main-navigation-link');
+  const navLink = e.target.closest('.js-main-navigation-link');
+
+  if (!navLink) {
+    return;
+  }
 
   if (isMobileMenuLink) {
     refs.mobileMenu.classList.add(isHiddenClassName);
   }
 
-  if (isNavLink) {
-    e.preventDefault();
-    const sectionId = e.target.attributes.href.value;
-    const targetSection = document.querySelector(sectionId);
-    smoothScroll(targetSection);
-  }
+  e.preventDefault();
+  const sectionId = navLink.attributes.href.value;
+  const targetSection = document.querySelector(sectionId);
+  smoothScroll(targetSection);
 }
