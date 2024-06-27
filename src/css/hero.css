@@ -100,17 +100,18 @@
 }
 
 .hero-content-wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 199px;
+  margin-top: 190px;
 }
 
 .hero-content-date-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 26px;
 }
 
 .hero-date-wrap-bg {
@@ -122,6 +123,7 @@
   border-radius: 25.5px;
   box-shadow: 5px 4px 0px 0px rgba(103, 91, 178, 0.48);
   background-color: var(--white-color);
+  transform-origin: top right;
   transform: rotate(-3.93deg);
 }
 
@@ -142,6 +144,33 @@
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
+}
+
+.left-star-mobile-icon {
+  position: absolute;
+  top: -15px;
+  left: -6px;
+  display: block;
+  width: 31px;
+  height: 31px;
+}
+
+.right-star-mobile-icon {
+  position: absolute;
+  top: -29px;
+  right: 30px;
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+
+.top-star-mobile-icon {
+  position: absolute;
+  top: -80px;
+  right: 21px;
+  display: block;
+  width: 19px;
+  height: 19px;
 }
 
 .hero-content-download-link {
@@ -336,14 +365,49 @@
     gap: 38px;
   }
 
-  .hero-date-wrap-bg {
-    transform-origin: top right;
-  }
-
   .hero-content-text {
     width: 307px;
     font-weight: 500;
     text-align: left;
+  }
+
+  .left-star-mobile-icon {
+    display: none;
+  }
+
+  .right-star-mobile-icon {
+    display: none;
+  }
+
+  .top-star-mobile-icon {
+    display: none;
+  }
+
+  .left-star-desk-icon {
+    position: absolute;
+    top: -211px;
+    left: 70px;
+    display: block;
+    width: 57px;
+    height: 57px;
+  }
+
+  .right-star-desk-icon {
+    position: absolute;
+    top: -267px;
+    right: 48px;
+    display: block;
+    width: 57px;
+    height: 57px;
+  }
+
+  .top-star-desk-icon {
+    position: absolute;
+    top: -321px;
+    left: 9px;
+    display: block;
+    width: 61px;
+    height: 61px;
   }
 
   .hero-content-download-link {
@@ -408,6 +472,18 @@
   }
 
   .hero-prize-desk-img {
+    display: none;
+  }
+
+  .left-star-desk-icon {
+    display: none;
+  }
+
+  .right-star-desk-icon {
+    display: none;
+  }
+
+  .top-star-desk-icon {
     display: none;
   }
 }
