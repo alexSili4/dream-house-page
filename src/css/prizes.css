@@ -156,21 +156,24 @@
   width: 230px;
 }
 
-.prizes-register-code-link {
+.prizes-register-code-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 94px;
+  padding: 0;
+  border: none;
   border-radius: 30px;
   background-color: var(--white-color);
   margin-top: 44px;
 }
 
-.prizes-register-code-link-title-wrap {
+.prizes-register-code-btn-title-wrap {
   position: relative;
 }
 
-.prizes-register-code-link-title {
+.prizes-register-code-btn-title {
   color: #592f9e;
   font-family: Nunito;
   font-size: 20px;
@@ -179,20 +182,20 @@
   text-align: center;
 }
 
-.prizes-register-code-link-star-icon {
+.prizes-register-code-btn-star-icon {
   position: absolute;
   display: block;
   transition: opacity var(--transition-duration-and-func);
 }
 
-.prizes-register-code-link-star-icon.left {
+.prizes-register-code-btn-star-icon.left {
   right: calc(100% + 20px);
   bottom: -5px;
   width: 28px;
   height: 28px;
 }
 
-.prizes-register-code-link-star-icon.right {
+.prizes-register-code-btn-star-icon.right {
   top: -7px;
   left: calc(100% + 12px);
   width: 26px;
@@ -305,12 +308,12 @@
     width: 380px;
   }
 
-  .prizes-register-code-link {
+  .prizes-register-code-btn {
     height: 114px;
     margin-top: 50px;
   }
 
-  .prizes-register-code-link:not(:is(:hover, :focus)) .prizes-register-code-link-star-icon {
+  .prizes-register-code-btn:not(:is(:hover, :focus)) .prizes-register-code-btn-star-icon {
     opacity: 0;
   }
 }

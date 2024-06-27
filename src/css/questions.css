@@ -84,9 +84,17 @@
 }
 
 .questions-answer-wrap {
-  max-height: 220px;
+  max-height: 170px;
   overflow: hidden;
   transition: max-height var(--answer-transition-duration-and-func);
+}
+
+.questions-answer-wrap.small {
+  max-height: 80px;
+}
+
+.questions-answer-wrap.big {
+  max-height: 270px;
 }
 
 .questions-answer {
@@ -109,6 +117,15 @@
 
 .questions-question-wrap:not(.hidden-desc) .question-btn-icon-hide {
   opacity: 1;
+}
+.questions-link {
+  color: currentColor;
+  text-decoration: underline;
+  transition: color var(--answer-transition-duration-and-func);
+}
+
+.questions-link:is(:hover, :focus) {
+  color: #f9b345;
 }
 
 .questions-download-link {
@@ -183,7 +200,15 @@
 
   .questions-answer-wrap {
     width: 896px;
-    max-height: 120px;
+    max-height: 85px;
+  }
+
+  .questions-answer-wrap.small {
+    max-height: 30px;
+  }
+
+  .questions-answer-wrap.big {
+    max-height: 140px;
   }
 
   .questions-answer {
