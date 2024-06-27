@@ -2,89 +2,169 @@ body:has(.register-code-backdrop-wrap:not(.is-hidden)) {
   overflow: hidden;
 }
 
-/* .backdrop-wrap {
+.register-code-backdrop-wrap {
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(89, 47, 158, 0.3);
   transition: opacity var(--transition-duration-and-func), visibility var(--transition-duration-and-func);
 }
 
-.backdrop {
+.register-code-backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 28px;
-  background-color: #f6f4ee;
 }
 
-.modal-win {
+.register-code-modal-win {
   position: relative;
-
+  width: 1104px;
   height: 100%;
-  background-color: #f6f4ee;
+  padding-top: 79px;
+  padding-bottom: 90px;
+  background-color: #9689e8;
+  border-radius: 50px;
 }
 
-.modal-win-close-btn {
+.register-code-modal-win-close-btn {
   position: absolute;
-  top: 32px;
-  right: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 40px;
+  right: 40px;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
-.modal-win-container {
-  width: 375px;
-  padding-top: 88px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
+.register-code-modal-win-close-btn-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: var(--white-color);
 }
 
-.modal-win-close-btn-icon {
-  width: 24px;
-  height: 24px;
+.register-code-modal-win-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.modal-win-title {
-  color: #37342b;
-  font-family: Akrobat;
-  font-size: 40px;
+.register-code-modal-win-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.01;
+}
+
+.register-code-modal-win-title-mobile-app {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.register-code-modal-win-title-mobile-app-icon {
+  width: 103px;
+  height: 52px;
+}
+
+.register-code-modal-win-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 145px;
+  margin-top: 69px;
+}
+
+.register-code-modal-win-link-qr-code-wrap {
+  position: relative;
+  box-shadow: 5.49px 6.42px 1.61px 0px rgba(103, 91, 178, 0.25);
+  background-color: var(--white-color);
+  border-radius: 21px;
+  padding: 17px;
+}
+
+.register-code-modal-win-link-qr-code-img {
+  display: block;
+  width: 195px;
+  height: 194px;
+}
+
+.register-code-modal-win-link-qr-code-arrow-icon {
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 43px;
+}
+
+.register-code-modal-win-link-qr-code-arrow-icon.left {
+  top: calc(100% + 24px);
+  left: -44px;
+}
+
+.register-code-modal-win-link-qr-code-arrow-icon.right {
+  top: calc(100% + 28px);
+  left: 198px;
+}
+
+.register-code-modal-win-link-service {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  gap: 8px;
+}
+
+.register-code-modal-win-link-service.play-market {
+  margin-left: 19px;
+}
+
+.register-code-modal-win-link-service-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #675bb2;
+}
+
+.register-code-modal-win-link-service-icon-wrap.play-market {
+  padding-left: 4px;
+}
+
+.register-code-modal-win-link-service-icon {
+  fill: var(--white-color);
+}
+
+.register-code-modal-win-link-service-icon.play-market {
+  width: 17px;
+  height: 18px;
+}
+
+.register-code-modal-win-link-service-icon.app-store {
+  width: 17px;
+  height: 20px;
+}
+
+.register-code-modal-win-link-service-title {
+  width: 156px;
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 20px;
   font-weight: 900;
-  text-transform: uppercase;
+  line-height: 1.1;
+  text-wrap: wrap;
 }
-
-.modal-win-img {
-  width: 100%;
-  height: auto;
-  margin-top: 32px;
-}
-
-.modal-win-img.money {
-  width: 230px;
-  height: 240px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.modal-win-text {
-  margin-top: 32px;
-  color: #37342b;
-  font-family: Manrope;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-} */
 
 @media screen and (max-width: 1279px) {
   .backdrop-wrap {

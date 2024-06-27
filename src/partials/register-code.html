@@ -1,5 +1,5 @@
-<div class="register-code-backdrop-wrap js-register-code-modal-win js-register-code-backdrop-wrap is-hidden1">
-  <div class="register-code-backdrop js-backdrop">
+<div class="register-code-backdrop-wrap js-register-code-modal-win js-register-code-backdrop-wrap is-hidden">
+  <div class="register-code-backdrop js-register-code-backdrop">
     <div class="register-code-modal-win">
       <button type="button" class="register-code-modal-win-close-btn js-register-code-modal-win-close-btn">
         <svg class="register-code-modal-win-close-btn-icon">
@@ -7,26 +7,49 @@
         </svg>
       </button>
       <div class="register-code-modal-win-container">
-        <p>
+        <p class="register-code-modal-win-title">
           <span>Реєстрація коду можлива через</span>
-          <span>
+          <span class="register-code-modal-win-title-mobile-app">
             <span>мобільний застосунок</span>
-            <svg>
+            <svg class="register-code-modal-win-title-mobile-app-icon">
               <use href="/icons/icons.svg#register-code-atb-logo"></use>
             </svg>
           </span>
         </p>
-        <ul>
-          <li>
-            <div>
-              <div>
-                <img src="/images/register-code/qr-code-play-market.png" alt="qr-код для завантажування мобільного застосунку" />
-              </div>
-              <div>
-                <svg>
-                  <use href="/icons/icons.svg#google-play-logo"></use>
+        <ul class="register-code-modal-win-links-list">
+          <li class="register-code-modal-win-links-list-item">
+            <div class="register-code-modal-win-link-wrap">
+              <div class="register-code-modal-win-link-qr-code-wrap">
+                <img class="register-code-modal-win-link-qr-code-img" src="/images/register-code/qr-code-play-market.png" alt="qr-код для завантажування мобільного застосунку" />
+                <svg class="register-code-modal-win-link-qr-code-arrow-icon left">
+                  <use href="/icons/icons.svg#qr-code-arrow-left"></use>
                 </svg>
-                <p>Завантажити з Play Market</p>
+              </div>
+              <div class="register-code-modal-win-link-service play-market">
+                <div class="register-code-modal-win-link-service-icon-wrap play-market">
+                  <svg class="register-code-modal-win-link-service-icon play-market">
+                    <use href="/icons/icons.svg#google-play-logo"></use>
+                  </svg>
+                </div>
+                <p class="register-code-modal-win-link-service-title">Завантажити з Play Market</p>
+              </div>
+            </div>
+          </li>
+          <li class="register-code-modal-win-links-list-item">
+            <div class="register-code-modal-win-link-wrap">
+              <div class="register-code-modal-win-link-qr-code-wrap">
+                <img class="register-code-modal-win-link-qr-code-img" src="/images/register-code/qr-code-app-store.png" alt="qr-код для завантажування мобільного застосунку" />
+                <svg class="register-code-modal-win-link-qr-code-arrow-icon right">
+                  <use href="/icons/icons.svg#qr-code-arrow-right"></use>
+                </svg>
+              </div>
+              <div class="register-code-modal-win-link-service">
+                <div class="register-code-modal-win-link-service-icon-wrap">
+                  <svg class="register-code-modal-win-link-service-icon app-store">
+                    <use href="/icons/icons.svg#app-store-logo"></use>
+                  </svg>
+                </div>
+                <p class="register-code-modal-win-link-service-title">Завантажити з App Store</p>
               </div>
             </div>
           </li>
