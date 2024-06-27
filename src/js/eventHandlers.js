@@ -6,7 +6,9 @@ refs.questionsList.addEventListener('click', toggleShowAnswer);
 refs.mobileMenuToggleBtn.forEach((el) => {
   el.addEventListener('click', toggleMobileMenu);
 });
-refs.registerCodeBtn.addEventListener('click', onRegisterCodeBtnClick);
+refs.registerCodeBtn.forEach((btn) => {
+  btn.addEventListener('click', onRegisterCodeBtnClick);
+});
 refs.registerCodeBackdrop.addEventListener('click', onBackdropClick);
 refs.registerCodeCloseBtn.addEventListener('click', onCloseBtnClick);
 

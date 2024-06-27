@@ -22,5 +22,6 @@ function onMainNavigationLinkClick(e) {
   e.preventDefault();
   const sectionId = navLink.attributes.href.value;
   const targetSection = document.querySelector(sectionId);
-  smoothScroll(targetSection);
+  const start = Object.keys(targetSection.dataset).includes('navStart');
+  smoothScroll({ targetSection, start });
 }

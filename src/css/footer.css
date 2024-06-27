@@ -182,8 +182,9 @@
 .footer-nav-links-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .footer-nav-link {
@@ -205,14 +206,14 @@
 
 .footer-additional-info-wrap {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 8px;
 }
 
 .footer-art-nation-link {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer-art-nation-icon {
@@ -306,16 +307,8 @@
     order: 4;
   }
 
-  .footer-additional-info-wrap {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .footer-art-nation-link {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 7px;
+    flex-direction: row;
   }
 
   .footer-art-nation-icon {
@@ -339,10 +332,6 @@
 }
 
 @media screen and (max-width: 1279px) {
-  .footer-nav-links-list-item:nth-child(odd) {
-    width: 113px;
-  }
-
   .footer-art-nation-icon.desk {
     display: none;
   }

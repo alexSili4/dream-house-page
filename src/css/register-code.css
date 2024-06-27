@@ -1,7 +1,3 @@
-body:has(.register-code-backdrop-wrap:not(.is-hidden)) {
-  overflow: hidden;
-}
-
 .register-code-backdrop-wrap {
   position: fixed;
   z-index: 10;
@@ -166,8 +162,14 @@ body:has(.register-code-backdrop-wrap:not(.is-hidden)) {
   text-wrap: wrap;
 }
 
+@media screen and (min-width: 1280px) {
+  body:has(.register-code-backdrop-wrap:not(.is-hidden)) {
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 1279px) {
-  .backdrop-wrap {
+  .register-code-backdrop-wrap {
     display: none;
   }
 }

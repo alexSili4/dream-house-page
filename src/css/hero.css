@@ -326,14 +326,21 @@
     height: 61px;
   }
 
-  .qr-code-img {
+  .hero-qr-code-img-wrap {
     position: absolute;
     top: 55px;
     left: -20px;
+    padding: 11px;
+    border-radius: 14px;
+    box-shadow: 3.44px 4.13px 0px 0px rgba(103, 91, 178, 0.52);
+    background-color: var(--white-color);
+  }
+
+  .qr-code-img {
     display: block;
-    width: 149px;
-    max-width: 149px;
-    height: 149px;
+    width: 127px;
+    max-width: 127px;
+    height: 126px;
   }
 
   .hero-house-desk-icon {

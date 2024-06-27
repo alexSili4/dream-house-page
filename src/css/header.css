@@ -91,6 +91,8 @@ body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
   right: 24px;
   width: 159px;
   background-color: #675bb3;
+  padding: 0;
+  border: none;
   padding-bottom: 13px;
 }
 
