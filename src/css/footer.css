@@ -311,15 +311,6 @@
     flex-direction: row;
   }
 
-  .footer-art-nation-icon {
-    width: 118px;
-    height: 50px;
-  }
-
-  .footer-art-nation-icon.mobile {
-    display: none;
-  }
-
   .footer-art-nation-text {
     margin-top: 24px;
     font-size: 14px;
@@ -328,11 +319,5 @@
 
   .footer-sun {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  .footer-art-nation-icon.desk {
-    display: none;
   }
 }
