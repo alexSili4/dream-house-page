@@ -12,6 +12,7 @@
 .header-container {
   display: flex;
   gap: 16px;
+  width: 375px;
   padding-left: 24px;
 }
 
@@ -88,7 +89,7 @@ body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
 }
 
 .header-link.code {
-  right: 24px;
+  right: 26px;
   width: 159px;
   background-color: #675bb3;
   padding: 0;
@@ -115,7 +116,9 @@ body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
   }
 
   .header-container {
-    padding-left: 16px;
+    width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .mobile-menu-btn {
@@ -123,7 +126,9 @@ body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
   }
 
   .nav {
+    width: 100%;
     padding-top: 29px;
+    padding-right: 0;
   }
 
   .header-link {
@@ -170,6 +175,7 @@ body:has(.mobile-menu.is-hidden) .mobile-menu-btn-icon.close {
   }
 
   .header-link.code {
+    right: 0;
     width: 177px;
     padding-bottom: 21px;
   }

@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
+  max-width: 343px;
 }
 
 .footer-general-info-wrap {
@@ -27,6 +29,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  width: 100%;
   border-radius: 24px;
   background-color: var(--white-color);
   padding-top: 44px;
@@ -255,6 +258,7 @@
   .footer-container {
     gap: 18px;
     width: 1200px;
+    max-width: 1200px;
   }
 
   .footer-general-info-wrap {
