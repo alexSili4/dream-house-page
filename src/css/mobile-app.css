@@ -128,10 +128,12 @@
 
 .mobile-app-steps-slider-controls {
   position: absolute;
+  z-index: 10;
   bottom: -10px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  pointer-events: none;
 }
 
 .mobile-app-steps-slider-button {
@@ -145,6 +147,7 @@
   border-radius: 50%;
   background-color: #bcb4f1;
   transition: background-color var(--transition-duration-and-func);
+  pointer-events: all;
 }
 
 .mobile-app-steps-slider-button:is(:hover, :focus) {

@@ -317,10 +317,18 @@
   .prizes-register-code-btn:not(:is(:hover, :focus)) .prizes-register-code-btn-star-icon {
     opacity: 0;
   }
+
+  .prizes-register-code-btn.mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1279px) {
   .prizes-slider-desk {
     display: none !important;
+  }
+
+  .prizes-register-code-btn.desk {
+    display: none;
   }
 }

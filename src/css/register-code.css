@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 28px;
+  padding: 4px;
 }
 
 .register-code-modal-win {
@@ -160,12 +160,6 @@
   font-weight: 900;
   line-height: 1.1;
   text-wrap: wrap;
-}
-
-@media screen and (min-width: 1280px) {
-  body:has(.register-code-backdrop-wrap:not(.is-hidden)) {
-    overflow: hidden;
-  }
 }
 
 @media screen and (max-width: 1279px) {
