@@ -7,6 +7,7 @@ const refs = {
   registerCodeBackdrop: document.querySelector('.js-register-code-backdrop'),
   registerCodeBackdropWrap: document.querySelector('.js-register-code-backdrop-wrap'),
   registerCodeCloseBtn: document.querySelector('.js-register-code-modal-win-close-btn'),
+  downloadRulesLinks: document.querySelectorAll('.js-download-rules-link'),
 };
 
 export default refs;

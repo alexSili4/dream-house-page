@@ -26,6 +26,9 @@ export default defineConfig({
           if (assetInfo.name.endsWith('.png') || assetInfo.name.endsWith('.jpg')) {
             return 'images/[name]-[hash][extname]';
           }
+          if (assetInfo.name.endsWith('.pdf')) {
+            return 'documents/[name][extname]';
+          }
           // Настройка для других файлов, если необходимо
           return 'assets/[name]-[hash][extname]';
         },

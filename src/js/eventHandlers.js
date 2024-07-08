@@ -11,6 +11,13 @@ refs.registerCodeBtn.forEach((btn) => {
 });
 refs.registerCodeBackdrop.addEventListener('click', onBackdropClick);
 refs.registerCodeCloseBtn.addEventListener('click', onCloseBtnClick);
+refs.downloadRulesLinks.forEach((link) => {
+  link.addEventListener('click', onDownloadRulesLinkClick);
+});
+
+function onDownloadRulesLinkClick(e) {
+  e.currentTarget.blur();
+}
 
 function onCloseBtnClick(e) {
   refs.registerCodeBackdropWrap.classList.add(isHiddenClassName);
