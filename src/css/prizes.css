@@ -42,6 +42,17 @@
   text-align: center;
 }
 
+.prizes-prize-date-wrap.winner {
+  height: 38px;
+  border-radius: 19px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.prizes-prize-date.winner {
+  font-size: 16px;
+}
+
 .prizes-prize-title-wrap {
   display: flex;
   align-items: center;
@@ -49,6 +60,54 @@
   height: 70px;
   border-radius: 16px;
   background-color: #675bb2;
+}
+
+.prizes-prize-title-wrap.winner {
+  height: 112px;
+}
+
+.prizes-winners-list-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.prizes-winners-list-title {
+  color: var(--white-color);
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.prizes-winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.prizes-winners-list-item {
+  width: 100%;
+}
+
+.prizes-winner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.prizes-winner-text {
+  color: var(--white-color);
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .prizes-prize-name {
@@ -237,9 +296,22 @@
     font-size: 28px;
   }
 
+  .prizes-prize-date.winner {
+    font-size: 28px;
+  }
+
   .prizes-prize-title-wrap {
     height: 92px;
     border-radius: 20px;
+  }
+
+  .prizes-winners-list-wrap {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .prizes-winner-wrap {
+    gap: 16px;
   }
 
   .prizes-prize-name {
